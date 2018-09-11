@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vit"
+        android:id="@+id/logo"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logo"
+        android:text="\nVidyalankar Institute of Technology"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/profilepic"
+        android:background="@drawable/ketan"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilename"
+        android:text="Yogesh Doulatramani"
+        android:textSize="23dp"
+        android:textColor="@color/pink"
+        android:layout_toRightOf="@id/profilepic"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileroll"
+        android:text="Assistant Professor"
+        android:textSize="23dp"
+        android:textColor="@color/pink"
+        android:layout_toRightOf="@id/profilepic"
+        android:layout_below="@id/profilename"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileclass"
+        android:text="INFT"
+        android:textSize="25dp"
+        android:textColor="@color/pink"
+        android:layout_toRightOf="@id/profilepic"
+        android:layout_below="@id/profileroll"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/studentdetails"
+        android:text="View Student Details"
+        android:textSize="20dp"
+        android:textColor="@color/pink"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/marks"
+        android:text="View Student Marks"
+        android:textSize="20dp"
+        android:textColor="@color/pink"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="330dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/appointment"
+        android:text="View Appointments"
+        android:textSize="20dp"
+        android:textColor="@color/pink"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"/>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        android:id="@+id/logout"
+        android:background="@drawable/button_shape3"
+        android:layout_marginTop="430dp"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

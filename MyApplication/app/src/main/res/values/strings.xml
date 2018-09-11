@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Campus Cloud</string>
+    <string name="spinner_title">Select Professor</string>
+</resources>
