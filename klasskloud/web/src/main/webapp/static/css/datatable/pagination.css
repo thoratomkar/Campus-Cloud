@@ -1,0 +1,16 @@
+body.example div.dataTables_wrapper.dt-bootstrap .dataTables_paginate .paginate_button
+	{
+	padding: 0;
+	margin-left: 0
+}
+
+body.example div.dataTables_wrapper.dt-bootstrap div.a.site-btn, body.example div.dataTables_wrapper.dt-bootstrap button.site-btn,
+	body.example div.dataTables_wrapper.dt-bootstrap input.site-btn {
+	margin-right: 0;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em
+}
+
+body.example div.dataTables_wrapper.dt-bootstrap th {
+	background: none !important
+}

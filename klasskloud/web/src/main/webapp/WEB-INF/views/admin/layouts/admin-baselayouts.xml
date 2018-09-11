@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+  <definition name="appTemplate" template="/WEB-INF/views/admin/common/includes/viewLayout.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/admin/common/includes/header.jsp" />
+        <put-attribute name="nav" value="" />
+        <put-attribute name="leftsidebar" value="/WEB-INF/views/admin/common/includes/leftsidebar.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/admin/common/includes/footer.jsp" /> 
+    </definition>
+    
+    <definition name="registerAppTemplate" template="/WEB-INF/views/admin/common/includes/registerViewLayout.jsp">
+    	<put-attribute name="header" value="/WEB-INF/views/admin/common/includes/registerHeader.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/views/admin/common/includes/registerFooter.jsp" /> 
+    </definition>
+    
+    <definition name="modalPopupTemplate" template="/WEB-INF/views/admin/common/includes/modalPopupLayout.jsp">
+        <put-attribute name="body" value="" />
+    </definition>
+    
+	<definition name="dashboard" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/dashboard/dashboardHome.jsp" />
+	</definition>
+	
+	<definition name="acadHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/acad/acadHome.jsp" />
+	</definition>
+	
+	<definition name="configHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/config/configHome.jsp" />
+	</definition>
+	
+	<definition name="academicHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/academic/academicHome.jsp" />
+	</definition>
+	
+	<definition name="admissionHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/admission/admissionHome.jsp" />
+	</definition>
+	
+	<definition name="studentHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/student/studentHome.jsp" />
+	</definition>
+	
+	<definition name="addStudent" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/student/addStudent.jsp" />
+	</definition>
+	
+	<definition name="manageStudent" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/student/manageStudent.jsp" />
+	</definition>
+	
+	<definition name="viewStudentDetails" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/student/viewStudentDetails.jsp" />
+	</definition>
+	
+	<definition name="scoreHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/score/scoreHome.jsp" />
+	</definition>
+	
+	<definition name="addScore" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/score/addScore.jsp" />
+	</definition>
+	
+	<definition name="manageScore" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/score/manageScore.jsp" />
+	</definition>
+	
+	<definition name="permissionHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/permission/permissionHome.jsp" />
+	</definition>
+	
+	<definition name="moduleHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/module/moduleHome.jsp" />
+	</definition>
+	
+	<definition name="operationHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/operation/operationHome.jsp" />
+	</definition>
+	
+	<definition name="organizationHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/organization/organizationHome.jsp" />
+	</definition>
+	
+	<definition name="courseHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/course/courseHome.jsp" />
+	</definition>
+	
+	<definition name="registerHome" extends="registerAppTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/register/registerHome.jsp" />
+	</definition>
+	
+	<definition name="batchHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/batch/batchHome.jsp" />
+	</definition>
+	
+	<definition name="addBatch" extends="modalPopupTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/batch/addBatch.jsp" />
+	</definition>
+	
+	<definition name="subjectHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/subject/subjectHome.jsp" />
+	</definition>
+	
+	<definition name="sectionHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/section/sectionHome.jsp" />
+	</definition>
+	
+	<definition name="addSection" extends="modalPopupTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/section/addSection.jsp" />
+	</definition>
+	
+	<definition name="testHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/test/testHome.jsp" />
+	</definition>
+	
+	<definition name="addTest" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/test/addTest.jsp" />
+	</definition>
+	
+	<definition name="manageTest" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/test/manageTest.jsp" />
+	</definition>
+	
+	<definition name="attendanceHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/attendance/attendanceHome.jsp" />
+	</definition>
+
+	<definition name="timetableHome" extends="appTemplate">
+	    <put-attribute name="body"	value="/WEB-INF/views/admin/module/timetable/timetableHome.jsp" />
+	</definition>
+	
+</tiles-definitions>
